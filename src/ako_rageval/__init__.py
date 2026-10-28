@@ -1,6 +1,6 @@
 """ako-rageval: evaluation harness for Persian (Farsi) RAG pipelines."""
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 from .chunking import Chunk, Chunker, FixedSizeChunker, ParagraphChunker, SentenceChunker, WholeDocChunker, parse_chunker, split_sentences
 from .data import DataError, Doc, Prediction, Query, load_corpus, load_dataset, load_predictions

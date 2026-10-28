@@ -17,6 +17,10 @@ classifiers = [
   "Intended Audience :: Developers",
   "Natural Language :: Persian",
   "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
   "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
 dependencies = []
@@ -30,6 +34,7 @@ ako-rageval = "ako_rageval.cli:main"
 [project.urls]
 Homepage = "https://github.com/smzmotamed/ako-rageval"
 Issues = "https://github.com/smzmotamed/ako-rageval/issues"
+Source = "https://github.com/smzmotamed/ako-rageval"
 
 [tool.hatch.version]
 path = "src/ako_rageval/__init__.py"

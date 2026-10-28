@@ -1,0 +1,49 @@
+name: Publish to PyPI
+
+# Runs when a GitHub Release is published. Uses PyPI trusted publishing (OIDC),
+# so no API token is stored. One-time setup: pypi.org -> Publishing -> add a
+# pending publisher: project ako-rageval, owner smzmotamed, repository
+# ako-rageval, workflow publish.yml, environment pypi.
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install build twine pytest
+      - name: Tag must match package version
+        run: |
+          ver="v$(python -c "import re,pathlib;print(re.search(r'__version__ = \"(.+?)\"', pathlib.Path('src/ako_rageval/__init__.py').read_text()).group(1))")"
+          if [ "$ver" != "${GITHUB_REF_NAME}" ]; then
+            echo "Release tag ${GITHUB_REF_NAME} does not match package version ${ver}" >&2
+            exit 1
+          fi
+      - run: pip install -e . && pytest
+      - run: python -m build
+      - run: twine check dist/*
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: pypi
+    permissions:
+      id-token: write # required for trusted publishing
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist/
+      - uses: pypa/gh-action-pypi-publish@release/v1

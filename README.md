@@ -17,7 +17,7 @@ Persian text has problems that generic RAG tooling ignores: Arabic vs Persian `Ù
 ## Quick start
 
 ```bash
-pip install git+https://github.com/smzmotamed/ako-rageval   # PyPI release not published yet
+pip install ako-rageval
 
 ako-rageval compare --sample                       # bundled Persian corpus (23 docs, 27 questions)
 ako-rageval compare --sample --html report.html --report-lang fa
