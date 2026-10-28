@@ -1,0 +1,27 @@
+{"id": "q01", "question": "بلندترین قله‌ی ایران کدام است و ارتفاع آن چقدر است؟", "relevant": ["d01"], "reference_answer": "دماوند با ارتفاع حدود ۵۶۰۹ متر"}
+{"id": "q02", "question": "تخت جمشید در نزدیکی کدام شهر قرار دارد؟", "relevant": ["d02"], "reference_answer": "شیراز"}
+{"id": "q03", "question": "آرامگاه حافظ کجاست؟", "relevant": ["d03", "d14"], "reference_answer": "حافظیه در شیراز"}
+{"id": "q04", "question": "شاهنامه چند بیت دارد؟", "relevant": ["d04"], "reference_answer": "بیش از پنجاه هزار بیت"}
+{"id": "q05", "question": "سفره‌ی هفت‌سین مربوط به کدام جشن است؟", "relevant": ["d05"], "reference_answer": "نوروز"}
+{"id": "q06", "question": "در شب یلدا چه میوه‌هایی می‌خورند؟", "relevant": ["d06"], "reference_answer": "انار و هندوانه"}
+{"id": "q07", "question": "بزرگ‌ترین دریاچه‌ی جهان کدام است؟", "relevant": ["d07"], "reference_answer": "دریای خزر"}
+{"id": "q08", "question": "تهران در زمان کدام پادشاه پایتخت شد؟", "relevant": ["d08"], "reference_answer": "آقامحمدخان قاجار"}
+{"id": "q09", "question": "نویسنده‌ی گلستان و بوستان کیست؟", "relevant": ["d09"], "reference_answer": "سعدی شیرازی"}
+{"id": "q10", "question": "کدام پل‌های تاریخی بر روی زاینده‌رود قرار دارند؟", "relevant": ["d10"], "reference_answer": "سی‌وسه‌پل و پل خواجو"}
+{"id": "q11", "question": "بزرگ‌ترین تولیدکننده‌ی زعفران جهان کدام کشور است؟", "relevant": ["d11"], "reference_answer": "ایران"}
+{"id": "q12", "question": "کدام دشت ایران در فهرست میراث طبیعی یونسکو ثبت شده است؟", "relevant": ["d12"], "reference_answer": "دشت لوت"}
+{"id": "q13", "question": "تهران در دامنه‌ی کدام رشته‌کوه قرار دارد؟", "relevant": ["d08", "d13"], "reference_answer": "البرز"}
+{"id": "q14", "question": "در شیراز چه جاذبه‌های گردشگری وجود دارد؟", "relevant": ["d14"], "reference_answer": "باغ ارم و مسجد نصیرالملک"}
+{"id": "q15", "question": "شاعر قرن هشتم هجری که دیوانش در شب یلدا خوانده می‌شود چه کسی است؟", "relevant": ["d03"], "reference_answer": "حافظ شیرازی"}
+{"id": "q16", "question": "تخت‌جمشید را چه کسی ساخت؟", "relevant": ["d02"], "reference_answer": "ساخت آن در زمان داریوش یکم آغاز شد"}
+{"id": "q17", "question": "ساحل دریای مازندران در کدام استان‌ها قرار دارد؟", "relevant": ["d07"], "reference_answer": "گیلان، مازندران و گلستان"}
+{"id": "q18", "question": "بازار تاریخی ثبت‌شده در یونسکو در کدام شهر است؟", "relevant": ["d17"], "reference_answer": "تبریز"}
+{"id": "q19", "question": "بزرگ‌ترین جزیره‌ی ایران کدام است؟", "relevant": ["d19"], "reference_answer": "قشم"}
+{"id": "q20", "question": "آرامگاه خیام کجاست؟", "relevant": ["d20"], "reference_answer": "نیشابور"}
+{"id": "q21", "question": "سراینده‌ی مثنوی معنوی کیست؟", "relevant": ["d21"], "reference_answer": "مولوی"}
+{"id": "q22", "question": "کدام جشن در آخرین سه‌شنبه‌شب سال برگزار می‌شود؟", "relevant": ["d22"], "reference_answer": "چهارشنبه‌سوری"}
+{"id": "q23", "question": "حرم امام رضا در کدام شهر قرار دارد؟", "relevant": ["d16"], "reference_answer": "مشهد"}
+{"id": "q24", "question": "بزرگترين درياچه جهان كدام است؟", "relevant": ["d07"], "reference_answer": "دریای خزر"}
+{"id": "q25", "question": "کدام قله ارتفاع 5609 متر دارد؟", "relevant": ["d01"], "reference_answer": "دماوند"}
+{"id": "q26", "question": "پل خواجو در کدام شهر قرار دارد؟", "relevant": ["d10", "d15"], "reference_answer": "اصفهان"}
+{"id": "q27", "question": "در کدام شهر کاخ عالی‌قاپو قرار دارد؟", "relevant": ["d15"], "reference_answer": "اصفهان"}

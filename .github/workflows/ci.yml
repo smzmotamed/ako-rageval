@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.10", "3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: pip install -e ".[dev]"
+      - run: pytest
+      - name: Smoke test the CLI on the bundled sample
+        run: |
+          ako-rageval compare --sample --html report.html --json report.json
+          ako-rageval run --sample --fail-under recall@5=0.9
+          ako-rageval eval-answers --sample
+      - uses: actions/upload-artifact@v4
+        if: matrix.python == '3.13'
+        with:
+          name: sample-report
+          path: |
+            report.html
+            report.json
