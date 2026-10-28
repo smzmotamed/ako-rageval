@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import sys
 from importlib import resources
 from pathlib import Path
@@ -211,6 +212,9 @@ def main(argv: Sequence[str] | None = None) -> int:
     except DataError as exc:
         print(f"ako-rageval: {exc}", file=sys.stderr)
         return 2
+    except BrokenPipeError:  # e.g. `ako-rageval compare ... | head`: not an error
+        os.dup2(os.open(os.devnull, os.O_WRONLY), sys.stdout.fileno())
+        return 0
     return 2  # pragma: no cover
 
 
