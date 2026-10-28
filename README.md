@@ -1,6 +1,6 @@
 # ako-rageval
 
-[![CI](https://github.com/akomind-com/ako-rageval/actions/workflows/ci.yml/badge.svg)](https://github.com/akomind-com/ako-rageval/actions/workflows/ci.yml)
+[![CI](https://github.com/smzmotamed/ako-rageval/actions/workflows/ci.yml/badge.svg)](https://github.com/smzmotamed/ako-rageval/actions/workflows/ci.yml)
 [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 
 **Evaluation harness for Persian (Farsi) RAG pipelines.** Compare chunking strategies, retrievers and embedding models on your own corpus, track answer quality, and fail CI when retrieval regresses. فارسی: [README.fa.md](README.fa.md)
@@ -17,7 +17,7 @@ Persian text has problems that generic RAG tooling ignores: Arabic vs Persian `�
 ## Quick start
 
 ```bash
-pip install git+https://github.com/akomind-com/ako-rageval   # PyPI release not published yet
+pip install git+https://github.com/smzmotamed/ako-rageval   # PyPI release not published yet
 
 ako-rageval compare --sample                       # bundled Persian corpus (23 docs, 27 questions)
 ako-rageval compare --sample --html report.html --report-lang fa

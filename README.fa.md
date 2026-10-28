@@ -18,7 +18,7 @@
 ## شروع سریع
 
 ```bash
-pip install git+https://github.com/akomind-com/ako-rageval
+pip install git+https://github.com/smzmotamed/ako-rageval
 
 ako-rageval compare --sample
 ako-rageval compare --sample --html report.html --report-lang fa
